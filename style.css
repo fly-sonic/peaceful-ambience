@@ -14,7 +14,7 @@ body {
 
 #showcase {
   overflow: hidden;
-  position: absolute;
+  position: relative;
   background-image: url("media/images/forest.jpg");
   background-size: cover;
   background-position: center;
@@ -23,13 +23,25 @@ body {
   width: 100%;
 }
 
-.btn {
-  max-height: 70px;
+.btn-container {
+  height: 70px;
+  padding: 10px;
   position: fixed;
   z-index: 99;
   top: 10px;
   left: 10px;
   cursor: pointer;
+  border-radius: 15px;
+  background-color: rgba(135, 206, 235, 0.27);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+}
+
+.btn-img {
+  width: 100%;
+  height: 100%;
 }
 
 /* falling maples or petals */
